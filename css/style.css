@@ -1,0 +1,188 @@
+:root{
+    --headerBgC: #26292e;
+    --welcomeBgC: #e7718b;
+    --secShadow: #f9e3e6;
+    --sec2BgC: #f4f4f6;
+    --headerText: #a6a8ab;
+    --welcomeTextC: #fffaff;
+    --font-family: 'Butterfly Kids', cursive;
+}
+
+/* icons  */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+.icon-bubbles {
+    width: 1.125em;
+}
+/* icons stop */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    color: var(--headerText);
+    background-color: var(--headerBgC);
+}
+
+.iconBox {
+    padding: 5px;
+    background-color: var(--welcomeTextC);
+    color: var(--headerBgC);
+    border-radius: 50%;
+}
+
+.section1 {
+    background-color: var(--welcomeBgC);
+    color: var(--welcomeTextC);
+}
+
+.block2 {
+    height: 50%;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px;
+    color: var(--welcomeTextC);
+    background-color: var(--headerBgC);
+    border-radius: 8px;
+}
+
+.section2 {
+    background-color: var(--sec2BgC);
+    box-shadow:0 5px 10px var(--secShadow);
+}
+
+.section2 p {
+    color: var(--headerText);
+}
+
+.section3 h2 {
+    text-align: center;
+    color: var(--headerBgC);
+}
+
+.product {
+    width: 250px;
+    height: 125px;
+    margin-bottom: 30px;
+    background-color: var(--headerBgC);
+    border: 10px solid var(--headerText);
+}
+
+.section3 .icon {
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+.icon-search {
+    font-size: 30px;
+    color: var(--welcomeTextC);
+}
+
+.aside {
+    color: var(--headerText);
+}
+
+.footer {
+    background-color: var(--headerBgC);
+}
+
+.colophon {
+    color: var(--headerText);
+}
+
+@media (max-width: 1028px) {
+
+    .sec3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1028px) {
+    .section3 h2 {
+        width: 100%;
+    }
+    .prod-col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product2 {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        text-align: center;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .icon {
+        margin: 0;
+    }
+    
+    .sec1-btn {
+        margin-left: 20%;
+    }
+
+    .block2 {
+        text-align: center;
+    }
+    
+    .section2 .text {
+        text-align: center;
+    }
+    
+    .sub-header {
+        text-align: center;
+    }
+    
+    .aside-text {
+        text-align: center;
+    }
+    
+    .colophon {
+        text-align: center;
+    }
+    
+    .social-list {
+        flex-wrap: nowrap;
+    }
+    
+    .sub-header-icon {
+        font-size: 50px;
+        
+    }
+}
